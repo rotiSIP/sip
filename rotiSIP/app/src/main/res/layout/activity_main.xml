@@ -1,0 +1,112 @@
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity"
+    android:background="#FFFFFF">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:measureWithLargestChild="false"
+        android:orientation="vertical"
+        android:background="#FFFFFF">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/layout_toolbar">
+
+        </include>
+
+        <RelativeLayout
+            android:id="@+id/displayUtama"
+            android:layout_below="@id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="#7B68EE"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:id="@+id/nama_sales"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fahim Alfiyan"
+                android:textStyle="bold"
+                android:textSize="22sp"
+                android:layout_margin="5dp"/>
+            <TextView
+                android:id="@+id/jdl_transaksi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Transaksi Hari Ini"
+                android:layout_below="@id/nama_sales"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:layout_margin="5dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rp. 100.000"
+                android:layout_margin="5dp"
+                android:textStyle="bold"
+                android:textSize="22sp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_below="@id/displayUtama"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="70dp"
+            android:paddingTop="80dp"
+            >
+
+            <ImageButton
+                android:id="@+id/bMenu"
+                android:src="@drawable/menu"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="#FFFFFF"/>
+
+            <ImageButton
+                android:id="@+id/bPenjualan"
+                android:src="@drawable/penjualan"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_toRightOf="@id/bMenu"
+                android:background="#FFFFFF"/>
+
+            <ImageButton
+                android:id="@+id/bStok"
+                android:src="@drawable/stok"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_below="@id/bMenu"
+                android:background="#FFFFFF"/>
+
+            <ImageButton
+                android:id="@+id/bLaporan"
+                android:src="@drawable/laporan"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_below="@id/bPenjualan"
+                android:layout_toRightOf="@id/bStok"
+                android:background="#FFFFFF"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/layout_header"
+        app:menu="@menu/item_navigasi" />
+</android.support.v4.widget.DrawerLayout>

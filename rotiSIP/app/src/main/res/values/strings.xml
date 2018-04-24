@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Sales SIP</string>
+    <string name="openDrawer">Drawer dibuka</string>
+    <string name="closeDrawer">Drawer ditutup</string>
+    <string name="navigation_view_item_1">Beranda</string>
+    <string name="navigation_view_item_2">Pengaturan</string>
+    <string name="navigation_view_item_3">Keluar</string>
+</resources>
