@@ -71,8 +71,7 @@
                 android:src="@drawable/menu"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:background="#FFFFFF"
-                android:contentDescription="@string/todo" />
+                android:background="#FFFFFF"/>
 
             <ImageButton
                 android:id="@+id/bPenjualan"
@@ -80,8 +79,7 @@
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_toEndOf="@id/bMenu"
-                android:background="#FFFFFF"
-                android:contentDescription="@string/todo" />
+                android:background="#FFFFFF" />
 
             <ImageButton
                 android:id="@+id/bStok"
@@ -89,8 +87,7 @@
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_below="@id/bMenu"
-                android:background="#FFFFFF"
-                android:contentDescription="@string/todo" />
+                android:background="#FFFFFF" />
 
             <ImageButton
                 android:id="@+id/bLaporan"
@@ -99,8 +96,7 @@
                 android:layout_height="100dp"
                 android:layout_below="@id/bPenjualan"
                 android:layout_toEndOf="@id/bStok"
-                android:background="#FFFFFF"
-                android:contentDescription="@string/todo" />
+                android:background="#FFFFFF" />
 
         </RelativeLayout>
 

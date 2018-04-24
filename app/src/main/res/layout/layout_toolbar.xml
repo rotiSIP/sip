@@ -14,8 +14,7 @@
             android:layout_height="80dp"
             android:padding="5dp"
             android:layout_alignParentEnd="true"
-            android:layout_marginEnd="20dp"
-            android:contentDescription="@string/todo" />
+            android:layout_marginEnd="20dp" />
     </RelativeLayout>
 
 </android.support.v7.widget.Toolbar>
