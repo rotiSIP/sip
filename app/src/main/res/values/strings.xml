@@ -5,4 +5,11 @@
     <string name="navigation_view_item_1">Beranda</string>
     <string name="navigation_view_item_2">Pengaturan</string>
     <string name="navigation_view_item_3">Keluar</string>
+    <string name="fahim_alfiyan">Fahim Alfiyan</string>
+    <string name="transaksi_hari_ini">Transaksi Hari Ini</string>
+    <string name="rp_100_000">Rp. 100.000</string>
+    <string name="todo">TODO</string>
+    <string name="todo">TODO</string>
+    <string name="todo">TODO</string>
+    <string name="todo">TODO</string>
 </resources>

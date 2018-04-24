@@ -34,7 +34,7 @@
                 android:id="@+id/nama_sales"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Fahim Alfiyan"
+                android:text="@string/fahim_alfiyan"
                 android:textStyle="bold"
                 android:textSize="22sp"
                 android:layout_margin="5dp"/>
@@ -42,7 +42,7 @@
                 android:id="@+id/jdl_transaksi"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Transaksi Hari Ini"
+                android:text="@string/transaksi_hari_ini"
                 android:layout_below="@id/nama_sales"
                 android:textStyle="bold"
                 android:textSize="15sp"
@@ -50,11 +50,11 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Rp. 100.000"
+                android:text="@string/rp_100_000"
                 android:layout_margin="5dp"
                 android:textStyle="bold"
                 android:textSize="22sp"
-                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
                 android:layout_alignParentBottom="true"/>
         </RelativeLayout>
 
@@ -62,7 +62,7 @@
             android:layout_below="@id/displayUtama"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:paddingLeft="70dp"
+            android:paddingStart="80dp"
             android:paddingTop="80dp"
             >
 
@@ -71,15 +71,17 @@
                 android:src="@drawable/menu"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:background="#FFFFFF"/>
+                android:background="#FFFFFF"
+                android:contentDescription="@string/todo" />
 
             <ImageButton
                 android:id="@+id/bPenjualan"
                 android:src="@drawable/penjualan"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:layout_toRightOf="@id/bMenu"
-                android:background="#FFFFFF"/>
+                android:layout_toEndOf="@id/bMenu"
+                android:background="#FFFFFF"
+                android:contentDescription="@string/todo" />
 
             <ImageButton
                 android:id="@+id/bStok"
@@ -87,7 +89,8 @@
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_below="@id/bMenu"
-                android:background="#FFFFFF"/>
+                android:background="#FFFFFF"
+                android:contentDescription="@string/todo" />
 
             <ImageButton
                 android:id="@+id/bLaporan"
@@ -95,8 +98,9 @@
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_below="@id/bPenjualan"
-                android:layout_toRightOf="@id/bStok"
-                android:background="#FFFFFF"/>
+                android:layout_toEndOf="@id/bStok"
+                android:background="#FFFFFF"
+                android:contentDescription="@string/todo" />
 
         </RelativeLayout>
 
